@@ -1,0 +1,42 @@
+{
+  "name": "food-delivery-backend-api",
+  "version": "1.0.0",
+  "description": "A Food Delivery Backend API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "dev": "ts-node-dev src/index.ts",
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "prisma": {
+    "schema": "./prisma/schema.prisma",
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.2.1",
+    "apollo-server-express": "^3.13.0",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "graphql": "^16.10.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^29.5.14",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.10.7",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "prisma": "^6.2.1",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
+  }
+}
